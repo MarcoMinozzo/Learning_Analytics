@@ -1,0 +1,98 @@
+# Social network analysis with agent-based modeling (ABM)
+### Marco Aurelio Minozzo
+**Data Science | Software Development | IA ML | GenAI | MSc in Digital Transformation**
+
+An agent-based model, often referred to as agent-based modeling (ABM), is a class of computer simulations that mimic the interactions of autonomous agents (individuals, entities, or groups) to evaluate their effects on the system as a whole. These models are used to simulate and study the complex dynamics of systems in a variety of fields, such as economics, biology, social sciences, engineering, and more.
+
+## Main features
+
+- **Autonomous Agents**: At the heart of agent-based modeling are autonomous agents. Each agent is a distinct entity with its own set of characteristics and rules of behavior. Agents can represent people, animals, cells, organizations, vehicles, etc., depending on the application domain.
+- **Local Interactions**: Agents interact with each other and with the environment in which they are inserted. Local interactions between agents can lead to the emergence of complex system-level behaviors, a central phenomenon in the study of complex systems.
+- **Heterogeneity**: Agents can be heterogeneous in their properties and rules of behavior, reflecting the diversity found in real systems.
+- **Adaptation**: Agents in agent-based models can learn and adapt their behavior based on their experiences, altering their strategies to achieve goals or respond to changes in the environment.
+- **Environment**: The environment in which agents operate can be modeled with varying degrees of detail and can influence or be influenced by the actions of agents.
+
+## Applications
+
+- **Economics and Financial Markets**: To simulate markets, understand price formation, and study the impact of economic policies.
+- **Ecology and Evolution**: To model ecosystems, simulate population dynamics, and study evolutionary processes.
+- **Sociology and Political Science**: To explore social dynamics, public opinion, and the effect of social policies.
+- **Public Health**: To model the spread of disease, evaluate intervention strategies, and optimize health resources.
+- **Urban Engineering and Planning**: To simulate the flow of traffic, plan the layout of cities, and study the evacuation of people in emergencies.
+- **Multi-agent systems in AI**: In the field of artificial intelligence, multi-agent systems explore how multiple intelligent agents interact to solve problems that are beyond the capabilities of a single agent.
+
+## Reasons
+
+The mathematical theory behind agent-based models (ABM) is diverse and interdisciplinary, spanning statistics, game theory, cellular automation, graphs, and more. While there is no single mathematical theory that encapsulates all aspects of ABMs, various mathematical principles and techniques are often employed in their construction and analysis. Here are some of the key concepts:
+
+### Cellular Automata
+
+One of the mathematical underpinnings of agent-based models is the idea of cellular automata, which are discrete systems with simple rules that govern the state of cells in a grid based on the states of their neighboring cells. This concept is useful for modeling the local interaction between agents and their environment. The evolution of the system is determined by the repeated application of these rules, leading to complex emergent patterns from simple initial conditions.
+
+### Graphs and Networks
+
+Many ABMs represent the interactions between agents and/or with their environment using graphs or networks, where the nodes represent the agents and the edges represent the relationships or connections between them. Graph theory provides tools for analyzing the structure of these interactions and understanding how network properties affect system behavior.
+
+### Game Theory
+
+Game theory is often used to model agents' decisions and strategies, especially in social, economic, and biological contexts. It provides a formal framework for analyzing situations in which the outcome for one agent depends on the choices made by other agents, incorporating notions of balance, cooperation, and competition.
+
+### Stochastic Processes
+
+ABMs often incorporate randomness into agent behaviors or environmental events, utilizing stochastic process concepts. This allows models to capture the uncertainty and variation inherent in real systems. Markov chains, Poisson processes, and random walks are examples of stochastic processes that can be used to model the state transitions of agents over time.
+
+### Dynamical and Differential Systems
+
+In some cases, the behavior of agents or the dynamics of the system as a whole can be described by differential equations or dynamical systems, especially when agents are modeled as having continuous states or when one is interested in the change of these states over time. Stability analysis and forks can help understand the conditions under which the system changes behavior.
+
+### Monte Carlo Simulations
+
+To analyze ABMs, especially those with significant stochastic components, Monte Carlo simulations are often used. These simulations involve repeatedly running the model under different initial conditions or parameters to explore the possible outcome space and obtain statistical estimates of the system properties.
+
+Although agent-based modeling is not defined by a single mathematical theory, it employs a wide range of mathematical concepts to simulate and analyze complex systems. The power of ABMs comes from their flexibility in incorporating different levels of detail and abstractions, allowing researchers and practitioners to explore the emergence of complex behaviors from the interactions of simpler components.
+
+## Tools
+
+There are several tools and software platforms available for implementing agent-based models, including NetLogo, AnyLogic, Mesa (in Python), and Repast, each with its own characteristics, advantages, and application domains.
+
+Agent system-based models offer a powerful and flexible approach to understanding and predicting the dynamics of complex systems, allowing researchers to explore "what if" scenarios and contribute to evidence-based decision-making.
+
+### Mesa Library
+
+The Mesa library is a powerful and flexible Python framework for agent-based modeling (ABM), allowing users to create, simulate, and visualize complex models of adaptive systems consisting of autonomous agents interacting with each other and their environment. Mesa offers a framework and tools that facilitate the implementation of agent-based models for a wide range of applications, from ecology, economics, sociology, to urban planning and more.
+
+#### Main Features of the Mesa Library
+
+- **Agent-Based Modeling**: Mesa allows you to define agents with individual behaviors and interaction rules, creating dynamic simulations that can model complex phenomena emerging from simple interactions.
+- **Spatial Environments**: The library includes support for various spatial structures, including grids (both square and hexagonal) and continuous networks, allowing agents to be located and move within a defined space.
+- **Data Collection**: Mesa provides tools to collect data generated during the simulation, making it easier to analyze the model's behavior over time and under different conditions.
+- **Visualization**: One of the strengths of the Mesa is its ability to visualize simulations using a web-based interface. This makes it easier for users to explore how agents behave and interact within the model.
+- **Scalability and Flexibility**: Mesa is designed to be easily scalable and flexible, allowing researchers and developers to build models from simple to highly complex, with hundreds or thousands of agents.
+
+### How It Works
+
+Mesa uses an object-oriented framework, where models and agents are defined as Python classes. Users can specify attributes and behaviors for each agent, as well as the rules for interaction between agents and with the environment. Mesa then simulates the system over time, allowing it to observe how local interactions between agents can lead to emergent patterns and behaviors at the system level.
+
+Mesa is an extremely useful tool for researchers, scientists, and developers interested in exploring the dynamics of complex systems through agent-based modeling. Its ease of use, combined with the ability to create interactive visualizations, makes the analysis of complex phenomena more accessible and informative.
+
+## Propagation of opinions on social networks
+
+Let's explore a practical example of agent-based modeling (ABM) applied to the study of opinion propagation within a social network. We will use Python and a simple library called a table to create an ABM model where agents (individuals) can interact on a given social network by issuing favorable (positive), unfavorable (negative) or neutral opinions, about a certain subject, product or even a person.
+
+The model is designed to convert negative and neutral opinions into positive ones.
+
+### Social Network Opinion Propagation Model (Business Rules)
+
+In this simplified model, we will consider the following points:
+
+1. **We define the number of agents with a positive or negative initial opinion**: Each agent in the model is initialized with a sentiment between positive, negative, or neutral.
+2. **One-Way Propagation of Positive Feelings**: The only way feelings can be propagated in the model is from positive agents to their neighbors. Positive agents have a chance to influence the sentiment of neighbors who are neutral or negative, potentially converting them to the positive state.
+3. **Differentiated Probabilities of Influence**:
+   - There is a 10% probability that a positive agent will convert a negative agent into a positive one.
+   - There is a 30% probability that a positive agent will convert a neutral agent into a positive one.
+4. **Absence of Propagation of Negative or Neutral Feelings**: There are no rules in the model that allow for the propagation of negative or neutral sentiments. Agents with these feelings do not have the ability to influence the emotional state of their neighbors.
+5. **Fixed Social Network Structure**: The simulation takes place in a social network modeled as an Erdős-Rényi graph, where the probability of each pair of agents being connected is defined by a parameter 'p_edge'. Once generated, the network structure remains fixed throughout the simulation.
+6. **Data Collection on the Distribution of Sentiments**: The model collects data at each step about the number of agents in each sentiment state. This allows for the analysis of the evolution of sentiments on the network over time.
+7. **Temporal Dynamics Defined by Iterations**: The simulation progresses in discrete steps (iterations), with each agent performing their action (attempting to influence a neighbor, if positive) at each step. The total number of steps is set by the user.
+
+This propagation model takes a simplified approach to simulate how positive feelings can spread in a social network, emphasizing positive influence as the only mechanism for changing emotional state among agents. The lack of propagation of negative or neutral feelings and the absence of mechanisms that allow the transfer of positive feelings to other states make the dynamics predominantly unidirectional, favoring the eventual predominance of positive feelings in the network.
