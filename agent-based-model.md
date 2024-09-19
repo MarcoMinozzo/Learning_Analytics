@@ -61,3 +61,9 @@ Let's explore an example of ABM applied to opinion propagation within a social n
 7. **Temporal Dynamics**: Simulation progresses in discrete steps, with actions taken at each step.
 
 This model emphasizes the unidirectional spread of positive influence, leading to the eventual predominance of positive sentiments in the network.
+
+We can see in the graph how opinion formation evolves over the course of interactions between agents and the number of interactions necessary to achieve satisfactory goals.
+
+This example is a basic introduction to agent-based modeling and shows how you can start simulating complex systems with local interactions between agents. The table offers many more functionalities, including the ability to create web-based visualizations of the simulations, which can significantly aid in understanding the dynamics of the model.
+
+Note: In this article I preferred to use the term social networks instead of social media because the model works in all types of social networks including the case of social media.
