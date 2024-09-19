@@ -62,6 +62,8 @@ Let's explore an example of ABM applied to opinion propagation within a social n
 
 This model emphasizes the unidirectional spread of positive influence, leading to the eventual predominance of positive sentiments in the network.
 
+[Texto do link](learning-analytics-ml/edit/main/abm.py)
+
 We can see in the graph how opinion formation evolves over the course of interactions between agents and the number of interactions necessary to achieve satisfactory goals.
 
 ![image](https://github.com/user-attachments/assets/660a3a8a-e541-4363-9272-fd5d900c6373)
