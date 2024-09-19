@@ -64,6 +64,9 @@ This model emphasizes the unidirectional spread of positive influence, leading t
 
 We can see in the graph how opinion formation evolves over the course of interactions between agents and the number of interactions necessary to achieve satisfactory goals.
 
+![image](https://github.com/user-attachments/assets/660a3a8a-e541-4363-9272-fd5d900c6373)
+
+
 This example is a basic introduction to agent-based modeling and shows how you can start simulating complex systems with local interactions between agents. The table offers many more functionalities, including the ability to create web-based visualizations of the simulations, which can significantly aid in understanding the dynamics of the model.
 
 Note: In this article I preferred to use the term social networks instead of social media because the model works in all types of social networks including the case of social media.
